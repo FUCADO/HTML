@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+	<title>Ciąg Fibonacciego</title>
+</head>
+<body>
+    
+<p><strong>Ciąg Fibonacciego</strong> to ciag liczb naturalnych określony rekuerencyjnie</p>
+<p><code>F(n) = F<sub>n-1</sub> + F<sub>n-2</sub> dla n>0</code></p>
+
+<ul style="list-style-type: square;">
+    <li><code><cite><strong>F<sub>0</sub></strong></cite> = 0</code></li>
+    <li><code><cite><strong>F<sub>1</sub></strong></cite> = 1</code></li>
+    <li><code><cite><strong>F<sub>2</sub></strong></cite> = 1</code></li>
+    <li><code><cite><strong>F<sub>3</sub></strong></cite> = 2</code></li>
+    <li><code><cite><strong>F<sub>4</sub></strong></cite> = 3</code></li>
+    <li><code><cite><strong>F<sub>5</sub></strong></cite> = 5</code></li>
+    <li><code><cite><strong>F<sub>6</sub></strong></cite> = 8</code></li>
+    <li><code><cite><strong>F<sub>7</sub></strong></cite> = 13</code></li>
+    <li><code><cite><strong>F<sub>8</sub></strong></cite> = 21</code></li>
+    <li><code><cite><strong>F<sub>9</sub></strong></cite> = 34</code></li>
+</ul>
+
+<pre>Fibonacci( n )
+    if n=0 then return 0
+    if n=1 then return 1
+    f' ← 0
+    f ← 1
+    for i ← 2 to n
+      do
+        m ← f + f'
+        f' ← f
+        f ← m
+      end
+    return f</pre>
+
+    <a href="https://pl.wikipedia.org/wiki/Fibonacci"> Życiorys Fibonacciego</a>
+
+</body>
