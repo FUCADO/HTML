@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,9 @@
             table-layout: fixed;
             width: 100%;
         }
-        td, th {
+
+        td,
+        th {
             border-collapse: collapse;
             border: 1px solid rgb(0, 0, 0);
             padding: 10px;
@@ -22,45 +25,58 @@
 </head>
 
 <body>
-<table>
-    <caption>Wersja lajt</caption>
-    <tr>
-        <th>Godz.</th>
-        <th>Poniedziałek</th>
-        <th>Wtorek</th>
-        <th>Środa</th>
-        <th>Czwartek</th>
-        <th>Piątek</th>
-    </tr>
-    <tr>
-        <td>8<sup><u>00</u></sup>&mdash;8<sup><u>45</u></sup></td>
-        <td><cite>pochylenie</cite></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><span style="color: yellow;">k</span><span style="color: orange;">o</span><span style="color: red;">l</span><span style="color: green;">o</span><span style="color: blue;">r</span></td>
-    </tr>
+    <table>
+        <caption>Wersja lajt</caption>
+        <tr>
+            <th>Godz.</th>
+            <th>Poniedziałek</th>
+            <th>Wtorek</th>
+            <th>Środa</th>
+            <th>Czwartek</th>
+            <th>Piątek</th>
+        </tr>
+        <tr>
+            <td>8<sup><u>00</u></sup> &mdash; 8<sup><u>45</u></sup></td>
+            <td><cite>pochylenie</cite></td>
+            <td rowspan="3"><p style="border: 2px solid yellowgreen; border-radius: 50px 20px; padding: 15px;">Beware the fury of a patient</p></td>
+            <td rowspan="3">
+                <ul style="list-style-type: square;">
+                    <li>Pol</li>
+                    <li>Hist</li>
+                    <li>WF</li>
+                    <li>Geo</li>
+                    <li>GW</li>
+                </ol>
+            </td>
+            <td rowspan="3">
+                <ul style="list-style-type: lower-greek;">
+                    <li>MAt</li>
+                    <li>Fiz</li>
+                    <li>Chem</li>
+                    <li>Bio</li>
+                    <li>Ang</li>
+            </td>
+            <td><span style="color: yellow;">k</span><span style="color: orange;">o</span><span
+                    style="color: red;">l</span><span style="color: green;">o</span><span style="color: blue;">r</span>
+            </td>
+        </tr>
 
-    <tr>
-        <td>8<sup><u>50</u></sup>&mdash;9<sup><u>35</u></sup></td>
-        <td><strong>pogrubienie</strong></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><span style="text-shadow: 2px 2px dimgrey;">tekst z ostrym cieniem mgły</span></td>
-    </tr>
+        <tr>
+            <td>8<sup><u>50</u></sup> &mdash; 9<sup><u>35</u></sup></td>
+            <td><strong>pogrubienie</strong></td>
+            <td><span style="text-shadow: 2px 2px dimgrey;">tekst z ostrym cieniem mgły</span></td>
+        </tr>
 
-    <tr>
-        <td>9<sup><u>40</u></sup>&mdash;10<sup><u>25</u></sup></td>
-        <td><del>przekreślenie</del></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><a style="text-decoration-line:overline; text-decoration-style: wavy    ;" href="http://wp.pl"> link do wp.pl</a></td>
-    </tr>
+        <tr>
+            <td>9<sup><u>40</u></sup> &mdash; 10<sup><u>25</u></sup></td>
+            <td><del>przekreślenie</del></td>
+            <td><a style="text-decoration-line:overline; text-decoration-style: wavy    ;" href="http://wp.pl"> link do
+                    wp.pl</a></td>
+        </tr>
 
-    <tr>
-        <td style="text-align:center; text-transform: uppercase;" colspan="6">Szkoła podstawowa w zwierzogrodzie</td>
-    </tr>
-</table>
+        <tr>
+            <td style="text-align:center; text-transform: uppercase;" colspan="6">Szkoła podstawowa w zwierzogrodzie
+            </td>
+        </tr>
+    </table>
 </body>
