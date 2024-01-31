@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    fieldset {
+        width: 300px;
+        padding: 20px;
+        margin: auto;
+        
+    }
+    textarea{
+        width: 100%;
+        height: 50px;
+        background-color: aliceblue;
+        border-color: red;
+    }
+    input{
+        background-color: aliceblue;
+        border-color: steelblue;
+        font-family: 'Courier New', Courier, monospace;
+        width: 100%;
+    }
+    
+    
+   
+</style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Napisz komentarz:</legend><br/>
+            <label for="poletekstowe">Treść</label><br/>
+            <textarea id="poletekstowe" name="poletekstowe">
+            </textarea><br/>
+            <label for="input">Autor</label><br/>
+            <input id="input" name="input" type="text"><br/><br/>
+            <input type="submit" value="Wyślij komentarz">
+        </fieldset>
+    </form>
+</body>
+</html>
