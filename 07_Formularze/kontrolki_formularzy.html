@@ -37,6 +37,14 @@
             <input id="plik" name="plik" type="file" required>
             <br/>
             <br/>
+            <strong>range:</strong><label for="suwak">Ustaw wartość</label>
+            <input id="suwak" name="suwak" type="range" min="100" max="200" oninput="this.nextElementSibling.value = this.value" value="100" required><output>100</output>
+            <br/>
+            <br/>
+            <strong>search:</strong><label for="wyszukiwanie">Wyszukaj:</label>
+            <input id="wyszukiwanie" name="wyszukiwanie" type="search">
+            <br/>
+            <br/>
             <input type="submit" value="Wyślij">
         </fieldset>
     </form>
