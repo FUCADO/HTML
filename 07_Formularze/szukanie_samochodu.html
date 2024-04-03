@@ -9,6 +9,8 @@
         border-left: 3px solid blueviolet ;
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     table
     {
@@ -21,8 +23,8 @@
     <form action="formularz_akcja.html">
         <table>
             <tr>
-                <td><label for="marka">Marka:</label><br/><input id="marka" name="marka" type="text" required></td>
-                <td rowspan="2"><label for="nadwozie">Typ nadwozia</label><br/>
+                <td><label for="marka">Marka:*</label><br/><input id="marka" name="marka" type="text" required></td>
+                <td rowspan="2"><label for="nadwozie">Typ nadwozia:*</label><br/>
                     <select id="nadwozie" name="nadwozie" size="5" multiple>
                     <option value="coupe">coupe</option>
                     <option value="hatchback">hatchback</option>
@@ -30,16 +32,22 @@
                     <option value="kombi">kombi</option>
                     <option value="sedan">sedan</option>
                     </select></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><label for="data">Miesiąc i rok produkcji:</label><br/><input id="data" name="data" type="month"></td>
+                <td><label for="przebieg">Przebieg:</label><br/><input id="przebieg" name="przebieg" type="range" min="25000" max="250000" step="25000" oninput="this.nextElementSibling.value = this.value" value="25000" required><output>25000</output></td>
+                <td rowspan="2"><input type="submit" value="Szukaj"></td>
             </tr>
             <tr>
-                <td><label for="model">Marka:</label><br/><input id="model" type="text" required></td>
-
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><label for="model">Model:</label><br/><input id="model" type="text" required></td>
+                <td><label for="paliwko">Rodzaj paliwa:</label><br/>
+                <select id="paliwko">
+                    <option value="benzyna">Benzyna</option>
+                    <option value="hybryda">Hybryda</option>
+                    <option value="benzyna+bida">Benzyna+Gaz</option>
+                    <option value="disel">DIESELEK</option>
+                    <option disabled value="benzyna"><del>Elektryk</del></option>
+                </select>
+                </td>
+                <td><label for="cena">Cena:</label><br/><input id="cena" name="cena" type="range" min="2000" max="500000" step="1000" oninput="this.nextElementSibling.value = this.value" value="2000" required><output>2000</output></td>
             </tr>
         </table>
     </form>
