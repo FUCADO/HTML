@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="formularz_akcja.html">
+        <fieldset>
+            <legend>Prosta walidacja po stronie klienta</legend>
+            <br/>
+            <strong>tel:</strong><label for="phone">Podaj numer telefonu:    
+            </label>
+            <input id="phone" name="phone" 
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" 
+            type="tel" placeholder="123-456-789" required>
+            <br/>
+            <br/>
+            <strong>number:</strong><label for="quantity">Podaj liczbę pomiędzy -50 a 0:</label>
+            <input id="quantity" name="quantity" type="number" min="-50" max="0" step="5">
+            <br/>
+            <br/>
+            <strong>url:</strong><label for="link">Podaj adres URL:</label>
+            <input id="link" name="link" type="url" required>
+            <br/>
+            <br/>
+            <strong>email:</strong><label for="mail">Podaj email:</label>
+            <input id="mail" name="mail" type="email" required>
+            <br/>
+            <br/>
+            <strong>color:</strong><label for="favcolor">Wybierz kolor:</label>
+            <input id="favcolor" name="favcolor" type="color" required>
+            <br/>
+            <br/>
+            <strong>file:</strong><label for="plik">------</label>
+            <input id="plik" name="plik" type="file" required>
+            <br/>
+            <br/>
+            <input type="submit" value="Wyślij">
+        </fieldset>
+    </form>
+</body>
+</html>
