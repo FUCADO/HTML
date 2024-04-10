@@ -8,13 +8,13 @@
 <body>
     <form action="formularz_akcja.html">
         <fieldset>
-            <legend>Prosta walidacja po stronie klienta</legend>
+            <legend>kontrolki formularza</legend>
             <br/>
             <strong>tel:</strong><label for="phone">Podaj numer telefonu:    
             </label>
             <input id="phone" name="phone" 
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" 
-            type="tel" placeholder="123-456-789" required>
+            type="tel" placeholder="123-456-789">
             <br/>
             <br/>
             <strong>number:</strong><label for="quantity">Podaj liczbę pomiędzy -50 a 0:</label>
@@ -22,19 +22,19 @@
             <br/>
             <br/>
             <strong>url:</strong><label for="link">Podaj adres URL:</label>
-            <input id="link" name="link" type="url" required>
+            <input id="link" name="link" type="url">
             <br/>
             <br/>
             <strong>email:</strong><label for="mail">Podaj email:</label>
-            <input id="mail" name="mail" type="email" required>
+            <input id="mail" name="mail" type="email" >
             <br/>
             <br/>
             <strong>color:</strong><label for="favcolor">Wybierz kolor:</label>
-            <input id="favcolor" name="favcolor" type="color" required>
+            <input id="favcolor" name="favcolor" type="color" >
             <br/>
             <br/>
             <strong>file:</strong><label for="plik">------</label>
-            <input id="plik" name="plik" type="file" required>
+            <input id="plik" name="plik" type="file" >
             <br/>
             <br/>
             <strong>range:</strong><label for="suwak">Ustaw wartość</label>
@@ -45,6 +45,29 @@
             <input id="wyszukiwanie" name="wyszukiwanie" type="search">
             <br/>
             <br/>
+            <strong>hidden:</strong>
+            <input id="ukryte" name="ukryte" type="hidden" value="ukryte">
+            <br/>
+            <br/>
+            <strong>datalist:</strong><label for="browser_name">podaj nazwe przeglądarki:</label>
+            <input list="browsers" id="browser_name" name="browser_name">
+            <datalist id="browsers">
+                <option value="Internet Explorrer">
+                <option value="firefox">
+                <option value="chrome">
+            </datalist>
+            <br/>
+            <br/>
+            <strong>button:</strong><button onclick="alert('Elemant <button>');" type="button">Funkcja alert() [JavaScript]</button>
+            <br/>
+            <br/>
+            <input onclick="alert('Elemant <button>');" type="button" value="Również funkcja alert()"/>
+            <br/>
+            <br/>
+            <strong>Reset:</strong>
+            <input type="reset" value="zresetuj">
+            <br/>
+            <br/> 
             <input type="submit" value="Wyślij">
         </fieldset>
     </form>
