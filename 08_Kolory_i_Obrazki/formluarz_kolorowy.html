@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       table{
+        width: 400px;
+        background-color: papayawhip;
+        font-size: 1rem;
+        border: 1px;
+        border-collapse: collapse;
+       }
+       td{
+        border: 1px solid goldenrod;
+        text-align: center;
+        padding: 10px;
+       }
+       textarea{
+        background-color: sandybrown;
+       }
+       input{
+        background-color: lavenderblush;
+        border: 1px solid saddlebrown;
+       }
+    </style>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td><input type="text" placeholder="pierwsze imię"></td>
+            <td><input type="text" placeholder="drugie imię"></td>
+        </tr>
+        <tr>
+            <td><input min="-10" max="0" name="wspolczynnik" oninput="getElementById('wsp').value = this.value" step="0.1" type="range" value="-10"></td>
+            <td><output id="wsp">-10</output></td>
+        </tr>
+        <tr>
+            <td colspan="2"><textarea cols="48" rows="5"></textarea></td>
+            
+        </tr>
+        <tr>
+            <td><input type="search" placeholder="szukaj"></td>
+            <td><input list="browsers" id="browser_name" name="browser_name">
+                <datalist id="browsers">
+                    <option value="Jack">
+                    <option value="Wendy">
+                    <option value="Danny">
+                </datalist></td>
+        </tr>
+        <tr>
+            <td>
+                <input onclick="alert('Elemant <button>');" type="button" value="Pokaż okienko alert()"/>
+            </td>
+            <td>
+                <input type="reset">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="image" src="https://picsum.photos/350/200"></td>
+            
+        </tr>
+    </table>
+</form>
+</body>
+</html>
